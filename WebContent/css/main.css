@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/** 전체 밑줄 제거 */
+* {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+.about:hover {
+    text-decoration: underline;
+}
+
+.logo_history:hover {
+    text-decoration: underline;
+}
+
+.personal_info:hover {
+    text-decoration: underline;
+}
+
+.help:hover {
+    text-decoration: underline;
+}
+
+.affiliate:hover {
+    text-decoration: underline;
+}
+
+.feedback:hover {
+    text-decoration: underline;
+}
+
+.select:hover {
+    text-decoration: underline;
+}
+
+.notice:hover {
+
+    text-decoration: underline;
+
+}
+
+.top1 .top1_1 {
+    display: flex;
+    justify-content: flex-end;
+
+    background: #011533;
+    color: white;
+    height: 40px;
+}
+
+.top1 .top1_1 .game_title {
+    display: block;
+    background-color: #5B96F0;
+    margin-right: 1500px;
+    font-size: 13px;
+    padding-top: 10px;
+    width: 130px;
+}
+
+.top1 .top1_1 .title {
+    display: block;
+    background-color: #5B96F0;
+    padding-top: 10px;
+    padding-right: 13px;
+    font-weight: bold;
+}
+
+.top .top1_1 .country {
+    display: block;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: #5B96F0;
+}
+
+.top .top1_1 .language {
+    display: block;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+.top .top1_1 .down {
+    display: block;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.top .top1_1 .button1 {
+    display: block;
+    font-size: 13px;
+    padding-right: 7px;
+    width: 56px;
+}
+
+.top .top1_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5B96F0;
+    color: #E0E1E3;
+    height: 60px;
+    padding-right: 1100px;
+    padding-left: 200px;
+}
+
+.top .top1_3 {
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+    background: #022B68;
+    color: white;
+    padding-left: 320px;
+}
+
+.middle {
+    background: #5B96F0;
+    padding-top: 100px;
+    padding-left: 680px;
+}
+
+.middle .search_form {
+    display: block;
+    width: 550px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.table {
+    background: #5B96F0;
+    padding-top: 40px;
+    padding-left: 410px;
+
+}
+
+.table .hot_table {
+    background: white;
+}
+
+.footer {
+    background-color: #5B96F0;
+    padding-top: 40px;
+    height: 305px;
+}
+
+.footer .footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 850px;
+    padding-left: 400px;
+    height: 60px;
+    font-size: 12px;
+}
+
+.footer .footer_info {
+    width: 1550px;
+    font-size: 12px;
+    padding-left: 395px;
+    color: white;
+
+}
+
+.footer .sns_icon {
+    padding-top: 8px;
+    color: black;
+    font-size: 20px;
+    padding-left: 1430px;
+
+}
