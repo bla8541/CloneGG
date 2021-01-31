@@ -1,47 +1,65 @@
 @charset "UTF-8";
 
+
 /** 전체 밑줄 제거 */
 * {
     text-decoration: none;
+
 }
 
-a:link,
-a:visited {
+.top1_1>a:link {
     color: white;
 }
 
-.about:hover {
+.top1_1>a:visited {
+    color: white;
+}
+
+.top1_2>a:link {
+    color: #E1E1E1;
+}
+
+.top1_2>a:visited {
+    color: #E1E1E1;
+}
+
+.top1_2>a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    padding-bottom: 35px;
+    color: white;
+}
+
+.footer_menu>a:link {
+    color: white;
+}
+
+.footer_menu>a:visited {
+    color: white;
+}
+
+.footer_menu>a:hover {
     text-decoration: underline;
 }
 
-.logo_history:hover {
+.top1_3>a:link {
+    color: white;
+}
+
+.top1_3>a:visited {
+    color: white;
+}
+
+.top1_3>a:hover {
     text-decoration: underline;
 }
 
-.personal_info:hover {
-    text-decoration: underline;
+.sns_icon>a:link {
+    color: white;
 }
 
-.help:hover {
-    text-decoration: underline;
-}
-
-.affiliate:hover {
-    text-decoration: underline;
-}
-
-.feedback:hover {
-    text-decoration: underline;
-}
-
-.select:hover {
-    text-decoration: underline;
-}
-
-.notice:hover {
-
-    text-decoration: underline;
-
+.sns_icon>a:visited {
+    color: white;
 }
 
 .top1 .top1_1 {
@@ -100,13 +118,15 @@ a:visited {
 .top .top1_2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: #5B96F0;
     color: #E0E1E3;
     height: 60px;
     padding-right: 1100px;
     padding-left: 200px;
+    padding-top: 20px;
 }
+
+
 
 .top .top1_3 {
     display: block;
@@ -117,13 +137,15 @@ a:visited {
     padding-left: 320px;
 }
 
-.middle {
+
+
+.search {
     background: #5B96F0;
-    padding-top: 100px;
+    padding-top: 25px;
     padding-left: 680px;
 }
 
-.middle .search_form {
+.search .search_form {
     display: block;
     width: 550px;
     height: 40px;
@@ -137,8 +159,16 @@ a:visited {
 
 }
 
+.logo {
+    background: #5B96F0;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
 .table .hot_table {
     background: white;
+
 }
 
 .footer {
@@ -155,6 +185,10 @@ a:visited {
     padding-left: 400px;
     height: 60px;
     font-size: 12px;
+}
+
+.footer_menu .special {
+    font-weight: bold;
 }
 
 .footer .footer_info {
