@@ -31,16 +31,25 @@
 }
 
 .footer_menu>a:link {
-    color: white;
+    color: black;
 }
 
 .footer_menu>a:visited {
-    color: white;
+    color: black;
 }
 
 .footer_menu>a:hover {
     text-decoration: underline;
 }
+
+.sns_icon>a:link {
+    color: #C8C8C8;
+}
+
+.sns_icon>a:visited {
+    color: #C8C8C8;
+}
+
 
 .top1_3>a:link {
     color: white;
@@ -54,12 +63,12 @@
     text-decoration: underline;
 }
 
-.sns_icon>a:link {
-    color: white;
+.champion_table>a:link {
+    color: #C6C6C6;
 }
 
-.sns_icon>a:visited {
-    color: white;
+.champion_table>a:visited {
+    color: #C6C6C6;
 }
 
 .top1 .top1_1 {
@@ -84,7 +93,7 @@
     display: block;
     background-color: #5B96F0;
     padding-top: 10px;
-    padding-right: 13px;
+    padding-right: 30px;
     font-weight: bold;
 }
 
@@ -120,61 +129,59 @@
     justify-content: space-between;
     background: #5B96F0;
     color: #E0E1E3;
-    height: 60px;
-    padding-right: 1100px;
+    height: 50px;
+    padding-right: 500px;
     padding-left: 200px;
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 14px;
 }
 
+.search .search_form {
+    height: 25px;
+    margin-left: 300px;
 
+
+    width: 350px;
+}
 
 .top .top1_3 {
     display: block;
     height: 40px;
     padding-top: 10px;
-    background: #022B68;
+    background: #757575;
     color: white;
     padding-left: 320px;
     font-size: 14px;
 }
 
+.info {
+    padding-top: 20px;
+    font-size: 13px;
+    padding-left: 360px;
 
-
-.search {
-    background: #5B96F0;
-    padding-top: 25px;
-    padding-left: 680px;
 }
 
-.search .search_form {
-    display: block;
-    width: 550px;
-    height: 40px;
-    padding-left: 20px;
+.info .info_section {
+    color: #C8C8C8;
+}
+
+.info .info_sectio2 {
+    padding-left: 450px;
+    color: #C8C8C8;
 }
 
 .table {
-    background: #5B96F0;
-    padding-top: 40px;
-    padding-left: 410px;
-
+    padding-top: 30px;
+    background-color: white;
+    padding-left: 360px;
 }
 
-.logo {
-    background: #5B96F0;
-    text-align: center;
-    padding-top: 40px;
 
-}
 
-.table .hot_table {
-    background: white;
 
-}
 
 .footer {
-    background-color: #5B96F0;
+
     padding-top: 40px;
     height: 305px;
 }
@@ -197,7 +204,7 @@
     width: 1550px;
     font-size: 12px;
     padding-left: 395px;
-    color: white;
+    color: black;
 
 }
 
