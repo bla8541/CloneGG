@@ -44,4 +44,8 @@ target/
 # Spring 팀프로젝트 충돌 방지
 MANIFEST.MF
 pom.properties
+<<<<<<< HEAD
 target/
+=======
+target/
+>>>>>>> 38b6db767f85344100cb9104705af40cdc4649ee
