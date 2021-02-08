@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <title>챔피언 분석 - League of Legends</title>
+    <title> - 게임 전적</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main2.css" />
     <style>
@@ -56,34 +56,189 @@
         </div>
     </header>
     <div class="l-container">
-    	<div class="SummonerLayoutWrap">
-    		<div class="SummonerLayout tabWrap _recognized">
-    			<div class="Header">
-    				<div class="Face">
-    					<div class="borderImage"></div>
-    					<img src="" class="ProfileImage">
-    					<span class="Level tip" title="레벨">205</span>
-    				</div>
-    				<div class="Profile">
-    					<div class="Information">
-    						<span class="Name">소환사명</span>
-    					</div>
-    					<div class="Buttons">
-    						<button class="Button SemiRound Blue" id="SummonerRefreshButton" onclick=""
-    						style="position: relative;">전적갱신</button>
-    					</div>
-    				</div>
-    				<div class="Menu">
-    					<di class="MenuList tabHeaders"></di>
-    				</div>
-    				<div class="ContentWrap tabItems" id="SummonerLayoutContent">
-    					<div class="SideContent">
-    						<div class="TierBox Box"></div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+        <div class="SummonerLayoutWrap">
+            <div class="SummonerLayout tabWrap _recognized">
+                <div class="Header">
+                    <div class="Face">
+                        <div class="borderImage"></div>
+                        <img src="" class="ProfileImage">
+                        <span class="Level tip" title="레벨">205</span>
+                    </div>
+                    <div class="Profile">
+                        <div class="Information">
+                            <span class="Name">소환사명</span>
+                        </div>
+                        <div class="Buttons">
+                            <button class="Button SemiRound Blue" id="SummonerRefreshButton" onclick="" style="position: relative;">전적갱신</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Menu">
+                    <di class="MenuList tabHeaders"></di>
+                </div>
+                <div class="ContentWrap tabItems" id="SummonerLayoutContent">
+                    <div class="SideContent">
+                        <div class="TierBox Box">
+                            <div class="Medal tip tpd-delegation-uid-1">
+                                <img alt="" src="" />
+                            </div>
+                            <div class="TierRankInfo">
+                                <div class="RankType">솔로랭크</div>
+                                <div class="TierRank"></div>
+                                <div class="TierInfo">
+                                    <span class="LeaguePoints">
+                                        50 LP
+                                    </span>
+                                    /
+                                    <span class="WinLose">
+                                        <span class="win">10승</span>
+                                        <span class="lose">10패</span>
+                                        <br>
+                                        <span class="winRatio">승률 50%</span>
+                                    </span>
+                                </div>
+                                <div class="LeagueName">카르마의 룬 대가들</div>
+                            </div>
+                        </div>
+                        <div class="sub-tier">
+                            <img alt="" src="">
+                            <div class="sub-tier Info">
+                                <div class="sub-tier rank-type">자유 5:5랭크</div>
+                                <div class="sub-tier rank-tier">Gold 3</div>
+                                <div class="sub-tier rank-point">
+                                    <span class="sub-tier LeaguePoints">
+                                        50 LP
+                                    </span>
+                                    /
+                                    <span class="sub-tier WinLose">
+                                        <span class="sub-tier win">10승</span>
+                                        <span class="sub-tier lose">10패</span>
+                                        <br>
+                                        <span class="sub-tier winRatio">승률 50%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Box tabWrap stats-box _recognized">
+                            <div class="Tab">
+                                <ul class="TabList tabHeaders">
+                                    <li id="left_champion_all" class="Item tabHeader">
+                                        <a href="#">
+                                            S2021 전체
+                                        </a>
+                                    </li>
+                                    <li id="left_champion_solorank" class="Item tabHeader">
+                                        <a href="#">
+                                            솔로랭크
+                                        </a>
+                                    </li>
+                                    <li id="left_champion_flexrank" class="Item tabHeader">
+                                        <a href="#">
+                                            자유랭크 5:5
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="MostChampionContent tabItem overview-stats--all">
+                                <div class="MostChampionContent">
+                                    <div class="Face" title="">
+                                        <a href="">
+                                            <img src="">
+                                        </a>
+                                    </div>
+                                    <div class="ChamionInfo">
+                                        <div class="ChampionName" title="아펠리오스">
+                                            <a href="">아펠리오스</a>
+                                        </div>
+                                        <div class="ChampionCS" title="평균 CS(CS/분)">
+                                            CS 220(7.5)
+                                        </div>
+                                    </div>
+                                    <div class="Personal KDA">
+                                        <div class="KDA normal">
+                                            <span class="KDA">2.58</span>
+                                            <span class="Text">평점</span>
+                                        </div>
+                                        <div class="KDAeach">
+                                            <span class="Kill">5.8</span>
+                                            <span class="Bar"> / </span>
+                                            <span class="Death">4.7</span>
+                                            <span class="Bar"> / </span>
+                                            <span class="Assist">6.4</span>
+                                        </div>
+                                    </div>
+                                    <div class="Played">
+                                        <div class="WinRatio normal">
+                                            40%
+                                        </div>
+                                        <div class="Title">
+                                            25 게임
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="left_champion_more" class="MoreButton">
+                                    <a href="#">
+                                        더 보기 + 다른시즌 보기
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tabItem overview-stats--soloranked" style="display: hidden;"></div>
+                            <div class="tabItem overview-stats--flexranked5v5" style="display: hidden;"></div>
+                        </div>
+                        <div class="RecentWinRatio Box">
+                            <div class="Title">
+                                최근 7일간 랭크 승률
+                            </div>
+                            <div class="Content">
+                                <div class="Face">
+                                    <a href=""><img src=""></a>
+                                </div>
+                                <div class="ChampionInfo">
+                                    <div class="ChampionName" title="아펠리오스">
+                                        <a href="#">아펠리오스</a>
+                                    </div>
+                                </div>
+                                <div class="WinRatio">
+                                    33%
+                                </div>
+                                <div class="RatioGraph">
+                                    <div class="Graph">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SummonersMostGame Box">
+                            <div class="Title">같은 팀으로 게임한 소환사들(최근 20게임)</div>
+                            <div class="Content">
+                                <table>
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="RealContent">
+                        <div class="GameListContainer">
+                            <div class="Header Box">
+                                <div class="Navigation">
+                                    <ul class="List Type">
+                                        <li class="right_gametype_total"><a href="#">전체</a></li>
+                                        <li class="right_gametype_soloranked"><a href="#">솔로랭크</a></li>
+                                        <li class="right_gametype_flexranked"><a href="#">자유랭크</a></li>
+                                        <li class="right_gametype_queuetype"><a href="#">큐 타입</a></li>
+                                    </ul>
+                                    <div class="Acations">
+                                        <div class="Action">
+                                            <div class="Header" id="right_search_champion"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="footer_menu">
