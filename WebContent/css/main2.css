@@ -30,19 +30,14 @@
     color: white;
 }
 
-.table>a:hover {
+.champion_text_item>a:hover {
     text-decoration: none;
     border-bottom: 3px solid #5B96F0;
-    padding-bottom: 13px;
+    padding-bottom: 11px;
     color: #5B96F0;
 }
 
-.table2>a:hover {
-    text-decoration: none;
-    border-bottom: 3px solid #5B96F0;
-    padding-bottom: 13px;
-    color: #5B96F0;
-}
+
 
 .footer_menu>a:link {
     color: black;
@@ -77,21 +72,22 @@
     text-decoration: underline;
 }
 
-.table>a:link {
-    color: black;
+.champion_text_item>a:link {
+    color: #6C6C6C;
 }
 
-.table>a:visited {
-    color: black;
+.champion_text_item>a:visited {
+    color: #6C6C6C;
 }
 
-.table2>a:link {
-    color: black;
+.champion_ranking_item>a:link {
+    color: #6C6C6C;
 }
 
-.table2>a:visited {
-    color: black;
+.champion_ranking_item>a:visited {
+    color: #6C6C6C;
 }
+
 
 .top1 .top1_1 {
     display: flex;
@@ -105,7 +101,7 @@
 .top1 .top1_1 .game_title {
     display: block;
     background-color: #5B96F0;
-    margin-right: 1500px;
+    margin-right: 1493px;
     font-size: 13px;
 
     width: 130px;
@@ -129,7 +125,7 @@
 .top .top1_1 .language {
     display: block;
     padding-top: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     font-size: 13px;
 }
 
@@ -231,60 +227,85 @@
     color: #C8C8C8;
 }
 
-.ex {
-    padding-left: 360px;
+.champion_menu {
     padding-top: 20px;
+    padding-left: 365px;
 }
 
-.search_champion {
-    margin-left: 40px;
+.champion_list {
+    width: 605px;
+    background-color: #f9f9fa;
+    border: solid 1px #e9eff4;
+    box-sizing: border-box;
+    height: 700px;
 }
 
-.all {
-    margin-left: 10px;
+.champion_text {
+    background-color: #fff;
+    border-bottom: solid 1px #e9eff4;
+    height: 45px;
 }
 
-.toptop {
-    margin-left: 10px;
+.champion_text_item {
+    margin-left: 15px;
+    padding-right: 250px;
+    position: relative;
+    top: 13px;
+    font-size: 14px;
 }
 
-.jungle {
-    margin-left: 10px;
+.champion_search {
+    position: relative;
+    left: 400px;
+    top: -11px;
 }
 
-.mid {
-    margin-left: 10px;
+.champion_search input {
+    height: 36px;
+    width: 193px;
+    border: none;
+    background: #f7f7f7;
+    line-height: 15px;
+    font-size: 12px;
+    color: #9b9b9b;
+    box-sizing: border-box;
 }
 
-.bottom {
-    margin-left: 10px;
+.champion_ranking {
+    position: relative;
+    left: 601px;
+    top: -51px;
 }
 
-.support {
-    margin-left: 10px;
+.champion_ranking_item {
+    background: #fff;
+    border-bottom: solid 1px #e9eff4;
+    height: 46px;
+    border: solid 1px #e9eff4;
+    padding-left: 15px;
+    font-size: 14px;
 }
 
-.rank {
-    margin-left: 10px;
-    font-weight: bold;
+.tier img {
+    position: relative;
+    top: 8px;
 }
 
-.tier {
-    margin-left: 200px;
+.champion_ranking_item .tier {
+    padding-left: 280px;
 }
 
-.win {
-    margin-left: 10px;
-}
 
-.ben {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-.pick {
-    margin-left: 10px;
-
+.champion_ranking_list {
+    position: relative;
+    top: -51px;
+    left: 601px;
+    width: 602px;
+    background-color: #f9f9fa;
+    border: solid 1px #e9eff4;
+    box-sizing: border-box;
+    height: 654px;
 }
 
 .footer {
