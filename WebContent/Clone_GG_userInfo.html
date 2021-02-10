@@ -7,6 +7,7 @@
     <title> - 게임 전적</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main2.css" />
+    <link rel="stylesheet" href="css/userInfo.css" />
     <style>
         table , th, td {
             border: 1px solid #CFD1D5;
@@ -60,9 +61,11 @@
             <div class="SummonerLayout tabWrap _recognized">
                 <div class="Header">
                     <div class="Face">
-                        <div class="borderImage"></div>
-                        <img src="" class="ProfileImage">
-                        <span class="Level tip" title="레벨">205</span>
+                        <div class="ProfileIcon">
+                            <div class="borderImage"></div>
+                            <img src="img/SummonerICON.jpg" class="ProfileImage">
+                            <span class="Level tip" title="레벨">205</span>
+                        </div>
                     </div>
                     <div class="Profile">
                         <div class="Information">
@@ -80,7 +83,7 @@
                     <div class="SideContent">
                         <div class="TierBox Box">
                             <div class="Medal tip tpd-delegation-uid-1">
-                                <img alt="" src="" />
+                                <img src="img/silver.png">
                             </div>
                             <div class="TierRankInfo">
                                 <div class="RankType">솔로랭크</div>
@@ -384,11 +387,43 @@
                                                             /
                                                             <span class="Assist">3</span>
                                                         </div>
-                                                        <div class="KDARatio"></div>
+                                                        <div class="KDARatio">
+                                                            <span class="KDARatio">
+                                                                1.00:1
+                                                            </span>평점
+                                                        </div>
                                                     </div>
-                                                    <div class="Stats"></div>
-                                                    <div class="Items"></div>
-                                                    <div class="FollowPlayers Names"></div>
+                                                    <div class="Stats">
+                                                        <div class="Level">레벨 13</div>
+                                                        <div class="CS">
+                                                            <span class="CS tip tpd-delegation-uid-1">141 (5.7)CS</span>
+                                                        </div>
+                                                        <div class="CKRate tip tpd-delegation-uid-1">
+                                                            킬관여 60%
+                                                        </div>
+                                                        <div class="MMR">
+                                                            <span>매치 평균</span>
+                                                            <b>Bronze 1</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Items">
+                                                        <div class="ItemList">
+                                                            <div class="Item">
+                                                                <img src="">
+                                                            </div>
+                                                            <div class="Trinket">
+                                                                <img src=""> 제어 와드
+                                                                <span class="wards vision">3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="FollowPlayers Names">
+                                                        <div class="Team">
+                                                            <div class="Summoner "><a href="">소환사 a</a></div>
+                                                            <div class="Summoner Requseter"><a href="">플레이어</a></div>
+                                                        </div>
+                                                        <div class="Team"></div>
+                                                    </div>
                                                     <div class="StatsButton"></div>
                                                 </div>
                                                 <div class="GameDetail"></div>
@@ -397,6 +432,7 @@
                                     </div>
                                 </div>
                                 <div class="GameMoreButton Box">
+                                    <a href="" class="Button">더 보기</a>
                                 </div>
                             </div>
                         </div>
