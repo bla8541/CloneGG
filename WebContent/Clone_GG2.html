@@ -15,12 +15,17 @@
         td {
             height: 80px;
             padding-top: 30px;
-
+            background: #E6E6E6;
 
         }
         th {
             height: 50px;
             padding-top: 15px;
+        }
+                span.game_title img {
+            width: 28px;
+            padding-top:5px;
+            padding-right: 10px;
         }
     </style>
 </head>
@@ -31,7 +36,7 @@
         <div class="top1">
             <div class="top1_1">
                 <a href="Clone_GG.html" class="title">CLONE.GG</a>
-                <span class="game_title">리그오브레전드</span>
+                <span class="game_title"><img src="images/lol.png">리그오브레전드</span>
                 <span class="country"><i class="fas fa-globe-asia"></i></span>
                 <a href="#" class="language">한국어</a>
                 <span class="down"><i class="fas fa-angle-down"></i></span>
@@ -47,11 +52,22 @@
                 <a href="#">멀티서치</a>
                 <a href="#">OP셜</a>
                 <a href="#">커뮤니티</a>
-                <span class="search"><input type="text" name="user_name" class="search_form" placeholder="소환사명, 소환사명, ..." /></span>
+                <div class="search">
+                    <span class="search_language">
+                        KR
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </div>
+                <form>
+                    <input type="text" name="userName" class="search2" placeholder="소환사명, 소환사명, ..." autocomplete="off">
+                    <button>
+                        <img height="14" src="https://opgg-static.akamaized.net/images/gnb/svg/00-icon-gg.svg">
+                    </button>
+                </form>
             </div>
             <!--  상단 메뉴 3 -->
             <div class="top1_3">
-                <a href="#">[공지]★오★피★지★지★데★스★크★톱★앱★ 2021년 티어 상승$$$안정적이고☜☜☜빠른앱☎☎☎☎지 금 다 운 하 기☞☞</a>
+                <a href="#"></a>
             </div>
         </div>
         <div class="info">
@@ -60,63 +76,35 @@
             <span class="info_sectio3">Korea - 버전 : 11.02</span>
         </div>
     </header>
-    <section>
-        <div class="table">
-            <table class="champion_table">
-                <tr>
-                    <th colspan="5">
-                        <a href="#">전체</a>
-                        <a href="#">&nbsp;&nbsp;탑</a>
-                        <a href="#">&nbsp;&nbsp;정글</a>
-                        <a href="#">&nbsp;&nbsp;미드</a>
-                        <a href="#">&nbsp;&nbsp;바텀</a>
-                        <a href="#">&nbsp;&nbsp;서포터</a>
-                        <a href="#">&nbsp;&nbsp;로테이션</a>
-                        <span class="search_champion"><input type="text" name="champion_name" class="champion_form" placeholder="챔피언 검색 (가렌,ㄱㄹ,...)" /></span>
-                    </th>
-                    <th colspan="5">
-                        &nbsp;챔피언순위
-                        <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;티어</a>
-                        <a href="#">&nbsp;&nbsp;&nbsp;승률</a>
-                        <a href="#">&nbsp;&nbsp;&nbsp;벤률</a>
-                        <a href="#">&nbsp;&nbsp;&nbsp;픽률</a>
-                    </th>
-                <tr>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                </tr>
-                <tr>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                </tr>
-                <tr>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                </tr>
-                <tr>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                </tr>
-                <tr>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                    <td>챔피언테스트</td>
-                </tr>
-            </table>
+    <section class="champion_menu">
+        <div class="champion_list">
+            <div class="champion_text">
+                <div class="champion_text_item">
+                    <a href="#">전체</a>
+                    <a href="#">탑</a>
+                    <a href="#">정글</a>
+                    <a href="#">미드</a>
+                    <a href="#">바텀</a>
+                    <a href="#">서포터</a>
+                    <a href="#" style="color: #5B96F0;">로테이션</a>
+                </div>
+                <div class="champion_search">
+                    <input type="text" placeholder="챔피언 검색 (가렌, ㄱㄹ, ...)">
+                </div>
+                <div class="champion_ranking">
+                    <div class="champion_ranking2">
+                        <div class="champion_ranking_item">
+                            <span class="champion_ranking_title" style="font-weight: bold;">
+                                챔피언 순위</span> <a href="#" class="tier" style="padding-right: 10px;"><img src="images/tier.png" style="padding-top: 5px;">티어</a>
+                            <a href="#" style="padding-right: 10px;">승률</a>
+                            <a href="#" style="padding-right: 10px;">픽률</a>
+                            <a href="#" style="padding-right: 10px;">벤률</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="champion_ranking_list">
+                </div>
+            </div>
         </div>
     </section>
     <div class="footer">
@@ -130,7 +118,7 @@
             <a href="#">채용</a>
         </div>
         <div class="footer_info">
-            <span class="riot_games">© 2012-2021 OP.GG. OP.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+            <span class="riot_games">© 2012-2021 CLONE.GG. CLONE.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
             </span>
         </div>
         <div class="sns_icon">
