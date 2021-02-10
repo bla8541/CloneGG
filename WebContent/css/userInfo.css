@@ -1,0 +1,160 @@
+div {
+    display: block;
+}
+
+.l-container {
+    position: relative;
+    min-height: 700px;
+    padding-bottom: 120px;
+}
+
+.SummonerLayout>.Header>.Face {
+    display: inline-block;
+    width: 100px;
+    padding-left: 30px;
+    vertical-align: top;
+}
+
+.SummonerLayout>.Header>.Face>.ProfileIcon {
+    position: relative;
+}
+
+.SummonerLayout>.Header>.Face>.ProfileIcon>.borderImage {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 120px;
+    height: 120px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.SummonerLayout>.Header>.Face>.ProfileIcon>.ProfileImage {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    border: 0;
+}
+
+.SummonerLayout>.Header>.Face>.ProfileIcon>.Level {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -22px;
+    width: 44px;
+    height: 24px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    background: url(../img/bg-levelbox.png);
+    background-size: 100%;
+    line-height: 17px;
+    font-family: Helvetica, AppleSDGothic, "Apple SD Gothic Neo", AppleGothic, Arial, Tahoma;
+    font-size: 14px;
+    text-align: center;
+    color: #eabd56;
+}
+
+.SummonerLayout>.Header>.Profile {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    margin: 0 25px 0 25px;
+    vertical-align: top;
+    line-height: 1.1;
+}
+
+.SummonerLayout>.Header>.Profile>.Buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    margin: 15px 0 -6px;
+    white-space: nowrap;
+}
+
+.SummonerLayout>.ContentWrap {
+    overflow: hidden;
+}
+
+.SummonerLayout>.ContentWrap>.Content {
+    width: 1000px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.Box {
+    border: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #f2f2f2;
+    border-radius: 2px;
+}
+
+.sub-tier {
+    margin-top: 8px;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border: solid 1px #cdd2d2;
+}
+
+.SummonerLayoutContent>.RealContent {
+    display: inline-block;
+    width: 690px;
+    margin-left: 10px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.GameAverageStatsBox {
+    text-align: center;
+    margin-top: -1px;
+}
+
+.GameAverageStats tr>.Title:first-child {
+    border-left: none;
+    padding-left: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 0;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.SummonerLayoutContent>.SideContent>.Box {
+    margin-top: 10px;
+}
+
+.SummonerRatingMedium {
+    display: table;
+    width: 100%;
+    color: #879292;
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 8px 0;
+}
+
+.SummonerRatingMedium>.Medal {
+    display: table-cell;
+    vertical-align: middle;
+    width: 120px;
+    height: 124px;
+    text-align: center;
+}
+
+.SummonerRatingMedium>.Medal>.Image {
+    width: 104px;
+    height: 104px;
+    margin: -5px 0 -10px 0;
+}
