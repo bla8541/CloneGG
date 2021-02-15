@@ -7,6 +7,8 @@
     <title> - 게임 전적</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main2.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/summoner.css" />
     <link rel="stylesheet" href="css/userInfo.css" />
     <style>
         table , th, td {
@@ -82,42 +84,44 @@
                 <div class="ContentWrap tabItems" id="SummonerLayoutContent">
                     <div class="SideContent">
                         <div class="TierBox Box">
-                            <div class="Medal tip tpd-delegation-uid-1">
-                                <img src="img/silver.png">
-                            </div>
-                            <div class="TierRankInfo">
-                                <div class="RankType">솔로랭크</div>
-                                <div class="TierRank"></div>
-                                <div class="TierInfo">
-                                    <span class="LeaguePoints">
-                                        50 LP
-                                    </span>
-                                    /
-                                    <span class="WinLose">
-                                        <span class="win">10승</span>
-                                        <span class="lose">10패</span>
-                                        <br>
-                                        <span class="winRatio">승률 50%</span>
-                                    </span>
+                            <div class="SummonerRatingMedium">
+                                <div class="Medal tip tpd-delegation-uid-1">
+                                    <img src="img/silver.png" class="Image">
                                 </div>
-                                <div class="LeagueName">카르마의 룬 대가들</div>
+                                <div class="TierRankInfo">
+                                    <div class="RankType">솔로랭크</div>
+                                    <div class="TierRank">Silver 3</div>
+                                    <div class="TierInfo">
+                                        <span class="LeaguePoints">
+                                            50 LP
+                                        </span>
+                                        /
+                                        <span class="WinLose">
+                                            <span class="win">10승</span>
+                                            <span class="lose">10패</span>
+                                            <br>
+                                            <span class="winRatio">승률 50%</span>
+                                        </span>
+                                    </div>
+                                    <div class="LeagueName">카르마의 룬 대가들</div>
+                                </div>
                             </div>
                         </div>
                         <div class="sub-tier">
-                            <img alt="" src="">
-                            <div class="sub-tier Info">
-                                <div class="sub-tier rank-type">자유 5:5랭크</div>
-                                <div class="sub-tier rank-tier">Gold 3</div>
-                                <div class="sub-tier rank-point">
-                                    <span class="sub-tier LeaguePoints">
+                            <img alt="" src="" class="sub-tier__medal">
+                            <div class="sub-tier__info">
+                                <div class="sub-tier__rank-type">자유 5:5랭크</div>
+                                <div class="sub-tier__rank-tier">Gold 3</div>
+                                <div class="sub-tier__rank-point">
+                                    <span class="sub-tier__LeaguePoints">
                                         50 LP
                                     </span>
                                     /
-                                    <span class="sub-tier WinLose">
-                                        <span class="sub-tier win">10승</span>
-                                        <span class="sub-tier lose">10패</span>
+                                    <span class="sub-tier__WinLose">
+                                        <span class="sub-tier__win">10승</span>
+                                        <span class="sub-tier__lose">10패</span>
                                         <br>
-                                        <span class="sub-tier winRatio">승률 50%</span>
+                                        <span class="sub-tier__winRatio">승률 50%</span>
                                     </span>
                                 </div>
                             </div>
@@ -144,40 +148,43 @@
                             </div>
                             <div class="MostChampionContent tabItem overview-stats--all">
                                 <div class="MostChampionContent">
-                                    <div class="Face" title="">
-                                        <a href="">
-                                            <img src="">
-                                        </a>
+                                    <div class="ChampionBox">
+                                        <div class="Face" title="">
+                                            <a href="">
+                                                <img src="" class="ChampionImage" width="45">
+                                            </a>
+                                        </div>
+                                        <div class="ChamionInfo">
+                                            <div class="ChampionName" title="아펠리오스">
+                                                <a href="">아펠리오스</a>
+                                            </div>
+                                            <div class="ChampionCS" title="평균 CS(CS/분)">
+                                                CS 220(7.5)
+                                            </div>
+                                        </div>
+                                        <div class="Personal KDA">
+                                            <div class="KDA normal">
+                                                <span class="KDA">2.58</span>
+                                                <span class="Text">평점</span>
+                                            </div>
+                                            <div class="KDAeach">
+                                                <span class="Kill">5.8</span>
+                                                <span class="Bar"> / </span>
+                                                <span class="Death">4.7</span>
+                                                <span class="Bar"> / </span>
+                                                <span class="Assist">6.4</span>
+                                            </div>
+                                        </div>
+                                        <div class="Played">
+                                            <div class="WinRatio normal">
+                                                40%
+                                            </div>
+                                            <div class="Title">
+                                                25 게임
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="ChamionInfo">
-                                        <div class="ChampionName" title="아펠리오스">
-                                            <a href="">아펠리오스</a>
-                                        </div>
-                                        <div class="ChampionCS" title="평균 CS(CS/분)">
-                                            CS 220(7.5)
-                                        </div>
-                                    </div>
-                                    <div class="Personal KDA">
-                                        <div class="KDA normal">
-                                            <span class="KDA">2.58</span>
-                                            <span class="Text">평점</span>
-                                        </div>
-                                        <div class="KDAeach">
-                                            <span class="Kill">5.8</span>
-                                            <span class="Bar"> / </span>
-                                            <span class="Death">4.7</span>
-                                            <span class="Bar"> / </span>
-                                            <span class="Assist">6.4</span>
-                                        </div>
-                                    </div>
-                                    <div class="Played">
-                                        <div class="WinRatio normal">
-                                            40%
-                                        </div>
-                                        <div class="Title">
-                                            25 게임
-                                        </div>
-                                    </div>
+                                    <div class="ChampionBox"></div>
                                 </div>
                                 <div id="left_champion_more" class="MoreButton">
                                     <a href="#">
