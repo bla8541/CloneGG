@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+    <meta name="csrf-token" content="cw6WK7bHTou3rGCCZcVzQFNihUVi0Rrn1hfqyDYL">
+    <title>전체 게시판 - 리그오브레전드 - Clone GG Talk</title>
+<meta name="description" content="OP.GG 커뮤니티, 톡피지지, 롤 전적검색, e스포츠 뉴스,리그오브레전드,league of legends">
+<meta name="keywords" content="OP.GG 커뮤니티, 톡피지지, 롤 전적검색, e스포츠, 뉴스, 리그오브레전드, league of legends">
+<link rel="canonical" href="1"/>
+<meta property="og:title" content="전체 게시판 - 리그오브레전드" />
+<meta property="og:site_name" content="Clone GG Talk" />
+
+<meta name="twitter:title" content="전체 게시판 - 리그오브레전드" />
+    <link rel="shortcut icon" href="https://talk.op.gg/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://talk.op.gg/images/favicon.png">
+    <link rel="stylesheet" href="css/community.css">
+</head>
+
+<div class="l-wrap l-wrap--list ">
+    <div class="l-header" id="header">
+        <header class="header">
+            <!-- Header Left -->
+            <div class="header-left">
+                <div class="site">
+                    <div class="site-logo">
+                        <a href="/">
+                            <div class="site-logo__image">Clone GG</div>
+                        </a>
+                    </div>
+                    <div class="site-family">
+                        <button class="site-family__button">Browse
+                            <img src="images/icon-dropdown-down.png" width="24" alt="">
+                        </button>
+                        <div class="site-dimmed"></div>
+                        <ul class="site-family-list">
+                            <li class="site-family-list__title">
+                                <img src="images/img-opgglogo.png" width="74" alt="OP.GG"><span>전적 검색 서비스</span>
+                                <button class="site-family-list__button">
+                                <img src="images/icon-close.png" width="24" height="24" alt="닫기"></button>
+                            </li>
+                            <li class="site-family-list__item">
+                                <a href="//op.gg">
+                                    <span class="site-family-icon">
+                                        <img class="site-family__icon" src="images/icon-browse-lol.png" alt="" height="24">
+                                    </span> <span class="site-family__name">리그오브레전드</span>
+                                </a>
+                            </li>
+                            <li class="site-family-list__item">
+                                <a href="//overwatch.op.gg">
+                                    <span class="site-family-icon">
+                                        <img class="site-family__icon" src="images/icon-browse-ow.png" alt="" height="24">
+                                    </span> <span class="site-family__name">오버워치</span>
+                                </a>
+                            </li>
+                            <li class="site-family-list__item">
+                                <a href="//pubg.op.gg"><span class="site-family-icon">
+                                    <img class="site-family__icon" src="images/icon-browse-pubg.png" alt="" height="24"></span>
+                                    <span class="site-family__name">배틀그라운드</span>
+                                </a>
+                            </li>
+                            <li class="site-family-list__item">
+                                <a href="http://fortnite.op.gg">
+                                    <span class="site-family-icon">
+                                        <img class="site-family__icon" src="images/icon-browse-fortnite.png" alt="" height="24"></span>
+                                    <span class="site-family__name">포트나이트</span>
+                                </a>
+                            </li>
+                            <li class="site-family-list__item">
+                                <a href="//r6.op.gg">
+                                    <span class="site-family-icon">
+                                        <img class="site-family__icon" src="images/icon-browse-r6.png" alt="" height="24"></span>
+                                    <span class="site-family__name">레인보우 식스 시즈</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-page">
+                            <a href="https://talk.op.gg/s/lol">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Header Right -->
+            <div class="header-right">
+                <a href="https://talk.op.gg/login" class="header-login__button button button--transparent">로그인</a>
+                <button type="button" id="sidebarToggleButton" class="header-sidebar__button"></button>
+            </div>
+                <div class="header-right" style="margin-right:5px;">
+                <div class="language-container">
+                    <button class="language-toggle-button">
+                        <span class="language__name">
+                            한국어
+                        </span>
+                        <img src="images/icon-dropdown-down.png" width="24" alt="">
+                    </button>
+                    <div class="gnb-dropdown">
+                        <ul class="gnb-dropdown-list">
+                            <li class="gnb-dropdown-list-item">
+                                <a class="header-login__auth-button button button--list " href="#" onclick="changeLanguage('ko_KR'); return false;">
+                                    한국어</a>
+                            </li>
+                            <li class="gnb-dropdown-list-item">
+                                <a class="header-login__auth-button button button--list " href="#" onclick="changeLanguage('en'); return false;">
+                                    English</a>
+                            </li>
+                            <li class="gnb-dropdown-list-item">
+                                <a class="header-login__auth-button button button--list  active " href="#" onclick="changeLanguage(''); return false;">               
+                                    자동 선택</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    <!-- Header Background -->
+    <div class="game-info">
+        <div class="game-info__background" style="background-image: url('/images/game/bg_lol.jpg');">
+        </div>
+        <div class="content">
+            <div class="game-info-content">
+                <a href="https://talk.op.gg/s/lol">
+                    <img src="images/icon-community-lol.png" alt="" class="game-info__icon">
+                    <h1 class="game-info__name">리그오브레전드</h1>
+                </a>
+            </div>
+            <form class="game-info-search" action="#" method="get">
+                <input class="game-info-search__input" type="text" name="userName" placeholder="소환사 검색">
+                    <button class="game-info-search__button">
+                        <img src="images/btn-lol.png" width="50" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Side Bar (content) -->
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar__inner">
+                <div class="sidebar-dimmed"></div>
+                <div class="sidebar-content-wrap">
+                    <div class="sidebar-content-top">
+                        <button class="sidebar__close">닫기</button>
+                    </div>
+                    <div class="sidebar-content-header">
+                        <div class="sidebar-button">
+                            <div class="sidebar-button__item">
+                                <a href="https://talk.op.gg/login" class="button button--green">로그인</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="sidebar-content">
+                        <div class="sidebar-menu">
+                            <div class="sidebar-menu__title">홈</div>
+                                <ul class="sidebar-menu__list">
+                                    <li class="sidebar-menu__item sidebar-menu__item--active">
+                                        <a href="https://talk.op.gg/s/lol/all?sort=popular">전체</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-menu">
+                                <div class="sidebar-menu__title">정보</div>
+                                <ul class="sidebar-menu__list">
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/opgg">OP.GG 기획</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/user-news">유저 뉴스</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/tip">팁과 노하우</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="sidebar-menu">
+                                <div class="sidebar-menu__title">커뮤니티</div>
+                                <ul class="sidebar-menu__list">
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/free">자유</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/humor">유머</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/videos">영상</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/lfg">유저 찾기</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/issues">사건 사고</a>
+                                    </li>
+                                    <li class="sidebar-menu__item ">
+                                        <a href="https://talk.op.gg/s/lol/fan-art">팬 아트</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Table -->
+            <div id="content">
+                <div class="sub-header">
+                    <div class="sub-header-info">
+                        <h2 class="sub-header__title">
+                            <a href="https://talk.op.gg/s/lol/all">전체</a>
+                        </h2>
+                        <ul class="sub-header-button">
+                            <li class="sub-header-button__item sub-header-button__item--search">
+                                <button id="search-toggle-button" class="button">검색하기</button>
+                            </li>
+                            <li class="sub-header-button__item">
+                                <a href="https://talk.op.gg/s/lol/all/write">
+                                    <img src="images/icon-write.png" alt="글쓰기" width="24">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-link" id="sub-menu">
+                        <ul class="sub-link__list">
+                            <li class="sub-link__item sub-link__item--active">
+                                <a href="https://talk.op.gg/s/lol/all?sort=popular">
+                                    <img src="images/icon-hot-on.png" width="24" alt="">
+                                    <span>인기</span>
+                                </a>
+                            </li>
+                            <li class="sub-link__item ">
+                                <a href="https://talk.op.gg/s/lol/all">
+                                    <img src="images/icon-new.png" width="24" alt="">
+                                    <span>최신</span>
+                                </a>
+                            </li>
+                            <li class="sub-link__item ">
+                                <a href="https://talk.op.gg/s/lol/all?sort=top">
+                                    <img src="images/icon-top.png" width="24" alt="">
+                                    <span>TOP</span>
+                                </a>
+                            </li>
+                            <li class="sub-link__item ">
+                                <a href="https://talk.op.gg/s/lol/all?sort=10">
+                                    <img src="images/icon-boost.png" width="24" alt="">
+                                    <span>10추</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sub-header-search">
+                            <form action="" id="sub-search">
+                                <label>
+                                    <select name="target" class="sub-header-search__select">
+                                    <option value="title" >제목</option>
+                                    <option value="user_name" >작성자</option>
+                                    </select>
+                                </label>
+                                <input type="text" name="q" class="sub-header-search__input" id="search-input" placeholder="검색">
+                                <button class="sub-header-search__button">
+                                    <img src="images/icon-search.png" width="24" alt="검색"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Content List -->
+                <section class="article-list article-list--fixed">
+                </section>
+                <section class="article-list">
+                    <!-- 1) 1 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>100</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트1</span>
+                                    <!-- 댓글 -->
+                                    <em>[10]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터1
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 2) 2 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>101</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트2</span>
+                                    <!-- 댓글 -->
+                                    <em>[11]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터2
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 3) 3 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>102</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트3</span>
+                                    <!-- 댓글 -->
+                                    <em>[12]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터3
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 4) 4 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>103</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트4</span>
+                                    <!-- 댓글 -->
+                                    <em>[13]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터4
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 5) 5 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>104</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트5</span>
+                                    <!-- 댓글 -->
+                                    <em>[14]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터5
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 6) 6 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>105</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트6</span>
+                                    <!-- 댓글 -->
+                                    <em>[15]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터6
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 7) 7 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>106</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트7</span>
+                                    <!-- 댓글 -->
+                                    <em>[16]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터7
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 8) 8 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>107</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트8</span>
+                                    <!-- 댓글 -->
+                                    <em>[17]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터8
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 9) 9 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>108</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트9</span>
+                                    <!-- 댓글 -->
+                                    <em>[18]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터9
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 10) 10 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>109</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트10</span>
+                                    <!-- 댓글 -->
+                                    <em>[19]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터10
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 11) 11 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>110</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트11</span>
+                                    <!-- 댓글 -->
+                                    <em>[20]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터11
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 12) 12번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>111</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트12</span>
+                                    <!-- 댓글 -->
+                                    <em>[21]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터12
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 13) 13번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>112</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트13</span>
+                                    <!-- 댓글 -->
+                                    <em>[22]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터13
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 14) 14 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>113</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트14</span>
+                                    <!-- 댓글 -->
+                                    <em>[23]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터14
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+                    <!-- 15) 15 번째 글 -->
+                    <article class="article-list-item">
+                        <!-- 추천 -->
+                        <div class="article-list-item__vote">
+                            <img src="images/icon-vote-up.png" alt="">
+                            <div>114</div>
+                        </div>
+                        <div class="article-list-item__content">
+                            <a class="article-list-item__info" href="#">
+                                <div class="article-list-item__title">
+                                    <!-- 글 제목 -->
+                                    <span class="post-title">테스트15</span>
+                                    <!-- 댓글 -->
+                                    <em>[24]</em>
+                                </div>
+                            </a>
+                            <div class="article-list-item-meta">
+                                <div class="article-list-item-meta__item">자유</div>
+                                <div class="article-list-item-meta__item">
+                                    <!-- 올린 시간 -->
+                                    <span data-tooltip="" data-date="2021-02-07ㅆ00:00:30+00:00"
+                                    title="2021년 2월 7일 일요일 오전 9:00">2 시간 전</span>
+                                </div>
+                                <!-- 올린 사람 -->
+                                <div class="article-list-item-meta__item article-list-item-meta__item--author">
+                                    <span data-tooltip="" title="레벨 2068">
+                                        <img class="article-list-item-meta__tier" src="">
+                                    </span>
+                                    <a href="#">
+                                        테스터15
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="article-list-item__mobile-link"></a>
+                        </div>
+                    </article>
+
+
+                    <!-- 다음 페이지 구현 -->
+                    <section class="article-list-paging">
+                        <div class="article-list-paging-content">
+                            <ul class="article-list-paging-list">
+                                <li class="article-list-paging__item article-list-paging__item--next">
+                                    <a href="#" class="article-list-paging__button button">
+                                        <span>다음</span><img src="images/icon-arrow-right.png" width="24" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="l-footer">
+        <footer class="footer">
+            <div class="footer-link">
+                <ul class="footer-link-list">
+                    <li class="footer-link-list__item footer-link-list__item--mobile-hide">
+                        <a href="http://www.op.gg/about/" target="_blank">회사소개</a></li>
+                    <li class="footer-link-list__item ">
+                        <a href="http://www.op.gg/about/agreement/" target="_blank">이용약관</a>
+                    </li>
+                    <li class="footer-link-list__item">
+                        <a href="http://www.op.gg/about/privacy/" target="_blank">개인정보처리방침</a>
+                    </li>
+                    <li class="footer-link-list__item footer-link-list__item--mobile-hide">
+                        <a href="mailto:contact@op.gg">제휴</a>
+                    </li>
+                    <li class="footer-link-list__item">
+                        <a href="mailto:service@op.gg">문의/피드백</a>
+                    </li>
+                    <li class="footer-link-list__item footer-link-list__item--mobile-hide">
+                        <a href="http://log.op.gg/op-gg-recruit-wanted/" target="_blank">채용</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+        </div>
+    </body>
+</html>
