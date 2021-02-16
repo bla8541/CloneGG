@@ -161,14 +161,16 @@
     overflow: hidden;
     color: #fff;
     background: #292e38;
-    height: 300px;
+
 }
 
 .champion_section_header {
     position: relative;
     width: 550px;
     padding-left: 360px;
+    height: 265px;
 
+    /* 상대하기 쉬운 챔피언 추가할떄 없애주기 */
 }
 
 .champion_position {
@@ -264,4 +266,151 @@
     position: relative;
     right: -160px;
     top: -107px;
+}
+
+.counter_champion {
+    position: relative;
+    right: -800px;
+    top: -260px;
+
+}
+
+.tab_item {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #28272c;
+    width: 140px;
+    border: none;
+    border-radius: 4px;
+}
+
+.tab_item a {
+    display: block;
+    line-height: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #28272c;
+}
+
+.tab_item2 {
+    position: relative;
+    right: -140px;
+    top: -26px;
+    background: #292e38;
+    border: none;
+    border-radius: 4px;
+}
+
+.tab_item2 a {
+    display: block;
+    width: 180px;
+    margin-left: 4px;
+    border-radius: 4px;
+    border: solid 1px #979797;
+    color: #9c9c9c;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.champion_table {
+    position: relative;
+    right: -800px;
+    top: -260px;
+    font-size: 13px;
+}
+
+.champion_table a {
+    color: #fff;
+}
+
+.list_rate {
+    position: relative;
+    right: -60px;
+}
+
+.list_counter {
+    position: relative;
+    right: -100px;
+    font-size: 12px;
+}
+
+.list_counter a {
+    color: #9c9c9c;
+}
+
+.list_counter a:hover {
+    color: #fff;
+}
+
+.list_champion2 {
+    padding-top: 10px;
+}
+
+.list_rate2 {
+    position: relative;
+    right: -60px;
+}
+
+.list_counter2 {
+    position: relative;
+    right: -100px;
+    font-size: 12px;
+}
+
+.list_counter2 a {
+    color: #9c9c9c;
+}
+
+.list_counter2 a:hover {
+    color: #fff;
+}
+
+.list_champion3 {
+    padding-top: 10px;
+}
+
+.list_rate3 {
+    position: relative;
+    right: -60px;
+}
+
+.list_counter3 {
+    position: relative;
+    right: -100px;
+    font-size: 12px;
+}
+
+.list_counter3 a {
+    color: #9c9c9c;
+}
+
+.list_counter3 a:hover {
+    color: #fff;
+}
+
+.middle_item {
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left: 360px;
+}
+
+.middle_list.active a {
+    color: #3c8eec;
+    border-bottom-color: #3c8eec;
+    font-weight: bold;
+}
+
+.middle_list a {
+    display: block;
+    border-bottom: 2px solid transparent;
+    padding: 14px 20px 15px;
+    line-height: 19px;
+    font-size: 15px;
+    color: #777;
+    text-decoration: none;
 }
