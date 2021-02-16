@@ -1,11 +1,60 @@
-div {
-    display: block;
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }
 
-.l-container {
+.SummonerLayout .inGamePlusTag {
+    position: absolute;
+    right: -12px;
+    top: -10px;
+    width: 46px;
+    height: 30px;
+    background: url('../images/plus/img-plustag.png') no-repeat;
+    cursor: pointer;
+}
+
+.SummonerLayout #ExtraView {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.SummonerLayout #ExtraView.opened {
+    padding-top: 40px;
+}
+
+.SummonerLayout>.Header {
     position: relative;
-    min-height: 700px;
-    padding-bottom: 120px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.SummonerLayout>.Header>.PastRank {
+    margin-top: -5px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.SummonerLayout>.Header>.PastRank>.PastRankList {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+
+.SummonerLayout>.Header>.PastRank>.PastRankList>.Item {
+    display: inline-block;
+    padding: 3px 4px 2px 4px;
+    margin-right: 3px;
+    background: #e0e3e3;
+    color: #657070;
+    font-size: 11px;
+    border: 1px solid #ced3d3;
+    border-radius: 3px;
 }
 
 .SummonerLayout>.Header>.Face {
@@ -35,10 +84,6 @@ div {
     height: 100px;
 }
 
-img {
-    border: 0;
-}
-
 .SummonerLayout>.Header>.Face>.ProfileIcon>.Level {
     position: absolute;
     top: 100%;
@@ -49,13 +94,18 @@ img {
     height: 24px;
     padding-top: 3px;
     box-sizing: border-box;
-    background: url(../img/bg-levelbox.png);
+    background: url('../images/site/summoner/bg-levelbox.png');
     background-size: 100%;
     line-height: 17px;
     font-family: Helvetica, AppleSDGothic, "Apple SD Gothic Neo", AppleGothic, Arial, Tahoma;
     font-size: 14px;
     text-align: center;
     color: #eabd56;
+}
+
+.SummonerLayout>.Header>.Face>.Button {
+    width: 100%;
+    margin-top: 12px;
 }
 
 .SummonerLayout>.Header>.Profile {
@@ -65,6 +115,57 @@ img {
     margin: 0 25px 0 25px;
     vertical-align: top;
     line-height: 1.1;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.Team {
+    color: #242929;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.Team>.Name {
+    color: #879292;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.Name {
+    color: #242929;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.FavoriteButton {
+    margin-left: 4px;
+    vertical-align: 1px;
+    text-decoration: none;
+    color: #777;
+    display: inline-block;
+    border: 1px solid #c6cbcb;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 10px;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.FavoriteButton>span {
+    vertical-align: middle;
+    zoom: .7;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.Rank {
+    margin-bottom: 5px;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.Rank>.LadderRank>.Link {
+    color: #555e5e;
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.SummonerLayout>.Header>.Profile>.Information>.Rank>.LadderRank>.Link>.ranking {
+    color: #059ede;
+    font-weight: bold;
 }
 
 .SummonerLayout>.Header>.Profile>.Buttons {
@@ -77,6 +178,136 @@ img {
     white-space: nowrap;
 }
 
+.SummonerLayout>.Header>.Profile>.Buttons>.Button {
+    margin: 0 6px 6px 0;
+}
+
+.SummonerLayout>.Header>.LastUpdate {
+    position: absolute;
+    left: 160px;
+    bottom: -18px;
+    height: 12px;
+    color: #99a2a2;
+    font-size: 11px;
+}
+
+.SummonerLayout>.Header>.lpHistorySummaryBox {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 380px;
+    margin-top: 30px;
+}
+
+.SummonerLayout>.Header>.lpHistorySummaryBox>.Title>.Actions>.Action {
+    outline: none;
+}
+
+.SummonerLayout>.Header>.LifeOwner {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border: 0;
+}
+
+.SummonerLayout>.Menu {
+    border-bottom: 1px solid #c6cbcb;
+    margin-top: 25px;
+}
+
+.SummonerLayout>.Menu>.MenuList {
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item {
+    display: inline-block;
+    margin: 0 -1px 0 0;
+    padding: 0;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item>a {
+    display: block;
+    min-width: 70px;
+    height: 39px;
+    border: 1px solid #c6cbcb;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #f2f2f2;
+    color: #555e5e;
+    font-size: 13px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item:hover>a {
+    background: #e8eaea;
+    color: #242929;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.active>a {
+    border-bottom: 1px solid #e8eaea;
+    background: #e8eaea;
+    color: #141717;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame {
+    position: relative;
+    margin-left: 15px !important;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame .icon {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 19px;
+    height: 17px;
+    margin-right: 2px;
+    background: url(../images/plus/icon-ingame-n.png) no-repeat;
+    vertical-align: middle;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame .text {
+    vertical-align: middle;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame>a {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    color: #1a78ae;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame:hover>a {
+    background-color: #e8eaea;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame.active>a {
+    background-color: #e8eaea;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame>.SpectateTabButtonActive {
+    border: 1px solid #288b8b !important;
+    background-color: #36a4a4;
+    color: #fff !important;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame>.SpectateTabButtonActive .icon {
+    background-image: url(../images/plus/icon-ingame-p.png);
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame:hover>.SpectateTabButtonActive {
+    background-color: #288b8b;
+}
+
+.SummonerLayout>.Menu>.MenuList>.Item.inGame.active>.SpectateTabButtonActive {
+    background-color: #288b8b;
+}
+
 .SummonerLayout>.ContentWrap {
     overflow: hidden;
 }
@@ -87,20 +318,629 @@ img {
     margin: 0 auto;
 }
 
-.Box {
-    border: 1px solid #cdd2d2;
-    box-shadow: 0 1px #dcdfdf;
-    background: #f2f2f2;
-    border-radius: 2px;
+.SummonerBlankLayout>.Header {
+    padding-top: 104px;
+    text-align: center;
 }
 
-.sub-tier {
-    margin-top: 8px;
-    padding: 16px 0;
-    display: flex;
-    align-items: center;
+.SummonerBlankLayout>.Header>.Logo {
+    width: 350px;
+    margin-bottom: 42px;
+}
+
+.SummonerBlankLayout>.Header>.Title {
+    color: #242929;
+    font-size: 26px;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput {
+    position: relative;
+    display: block;
+    width: 522px;
+    margin: 30px auto 0;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>input.Summoner {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 58px;
+    padding: 19px 70px 17px 30px;
+    font-size: 18px;
+    line-height: 1;
+    color: #555e5e;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>input.Summoner::-webkit-input-placeholder {
+    color: #555e5e;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>input.Summoner:-moz-placeholder {
+    color: #555e5e;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>input.Summoner::-moz-placeholder {
+    color: #555e5e;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>input.Summoner:-ms-input-placeholder {
+    color: #555e5e;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.Button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: none;
+    padding: 17px 15px 18px;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.Region {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    border: 1px solid #047bbc;
+    padding: 5px 6px 4px 6px;
+    background: #1f8ecd;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete {
+    text-align: left;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 520px;
+    background: #dbf0fc;
+    background: rgba(219, 240, 252, 0.95);
+    border: 1px solid #bcd0db;
+    z-index: 10;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.Tab {
+    font-size: 0;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.Tab>.Item {
+    display: inline-block;
+    width: 50%;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.Tab>.Item>.Text {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    background: #c7e6f9;
+    color: #1f8ecd;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.Tab>.Item>.Text>i {
+    margin-right: 10px;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap {
+    font-size: 0;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.SummonerList>.Item {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 28px;
+    line-height: 28px;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.SummonerList>.Item>.Link {
+    display: inline-block;
+    font-size: 11px;
+    color: #666;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-left: 13px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.SummonerList>.Item>.Link:hover {
+    text-decoration: underline;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.SummonerList>.Item>.Actions>.Action.Delete {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    background: url("../css3/sprite/images/icon_close_2.png") no-repeat center;
+    text-indent: -10000px;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.NotFound {
+    padding: 24px 10px;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+    text-align: center;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.SummonerList,
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content>.NotFound {
+    border-left: 1px solid #bcd0db;
+}
+
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content:first-child>.SummonerList,
+.SummonerBlankLayout>.Header>.SearchInput>.IndexAutoComplete>.SummonerListWrap>.ContentWrap>.Content:first-child>.NotFound {
+    border-right: 1px solid #bcd0db;
+    margin-right: -1px;
+    border-left: none;
+}
+
+.SummonerBlankLayout>.Header:after {
+    display: block;
+    margin: 30px auto;
+    content: "\00a0";
+    border-bottom: 1px solid #dbdede;
+    width: 200px;
+    height: 0;
+}
+
+.SummonerBlankLayout>.Content {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.SummonerBlankLayout>.Content>.List {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.SummonerBlankLayout>.Content>.List>.Item {
+    margin: 20px 0;
+    color: #555e5e;
+    font-size: 15px;
+}
+
+.SummonerNotFoundLayout>.Header {
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: left;
+    line-height: 2;
+}
+
+.SummonerNotFoundLayout>.Header>.Title {
+    color: #242929;
+    font-size: 26px;
+}
+
+.SummonerNotFoundLayout>.Header>.SubTitle {
+    color: #555e5e;
+    font-size: 18px;
+}
+
+.SummonerNotFoundLayout>.Header:after {
+    display: block;
+    margin: 15px auto;
+    content: "\00a0";
+    border-bottom: 1px solid #dbdede;
+    height: 0;
+}
+
+.SummonerNotFoundLayout>.Content {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.SummonerNotFoundLayout>.Content>.List {
+    padding-left: 9px;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item {
+    display: block;
+    margin: 9px 0 12px;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link {
+    color: #555e5e;
+    text-decoration: none;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link>i {
+    margin-right: 10px;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link>.RegionName {
+    vertical-align: middle;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link:hover {
+    color: #000;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link>.MatchSummonerInfo {
+    display: inline;
+    vertical-align: middle;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link>.MatchSummonerInfo>img {
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link>.MatchSummonerInfo>.SummonerName {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.SummonerNotFoundLayout>.Content>.List>.Item>.Link>.MatchSummonerInfo>.TierRank {
+    font-size: 11px;
+    color: #879292;
+}
+
+.MatchTimeLineLayout {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.MatchTimeLineLayout>.Menu {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList,
+.MatchTimeLineLayout>.Menu .Action {
+    display: inline-block;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-radius: 3px 3px 0 0;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList>.Item,
+.MatchTimeLineLayout>.Menu .Action>.Item {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList>.Item>.Link,
+.MatchTimeLineLayout>.Menu .Action>.Item>.Link {
+    display: inline-block;
+    height: 51px;
+    line-height: 51px;
+    text-decoration: none;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList {
     background-color: #f2f2f2;
-    border: solid 1px #cdd2d2;
+    border-color: #cdd2d2;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList>.Item>.Link {
+    color: #879292;
+    font-size: 16px;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList>.Item.active {
+    position: relative;
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList>.Item.active::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    border: 1px solid #1a78ae;
+    background-color: #1f8ecd;
+    content: "\00a0";
+}
+
+.MatchTimeLineLayout>.Menu>.MenuList>.Item.active>.Link {
+    color: #1f8ecd;
+    font-weight: bold;
+}
+
+.MatchTimeLineLayout>.Menu>.Action {
+    background-color: #1f8ecd;
+    border-color: #1a78ae;
+    float: right;
+}
+
+.MatchTimeLineLayout>.Menu>.Action>.Item>.Link {
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.MatchTimeLineLayout>.Menu>.Action>.Item>.Link>i {
+    margin-left: 9px;
+}
+
+.MatchTimeLineLayout>.tabItems>.ContentWrap {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.MatchTimeLineLayout>.tabItems>.ContentWrap>.Content {
+    background-color: #f2f2f2;
+    border: 1px solid #cdd2d2;
+    font-size: 0;
+}
+
+.MatchTimeLineLayout.extended>.GameDetail {
+    width: 970px;
+    margin: 0 auto;
+    border: 1px solid #cdd2d2;
+    background-color: #f2f2f2;
+}
+
+.SpectateModal {
+    width: 550px;
+}
+
+.SpectateModal>.Title {
+    padding: 22px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+    border-bottom: none;
+}
+
+.SpectateModal>.Title>.Icon {
+    margin-right: 8px;
+}
+
+.SpectateModal>.Title>.Text {
+    vertical-align: middle;
+}
+
+.SpectateModal>.Title>.Action {
+    position: absolute;
+    right: 22px;
+    top: 18px;
+}
+
+.SpectateModal>.Title>.Action>.ReportButton {
+    padding: 5px 10px;
+}
+
+.SpectateModal>.Title>.Action>.ReportButton img {
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.SpectateModal>.Alert {
+    position: relative;
+    padding-bottom: 5px;
+    background: #ededed;
+}
+
+.SpectateModal>.Alert span {
+    display: block;
+    padding: 13px 30px 13px 10px;
+    color: #f2f2f2;
+    border-top: 1px solid #288b8b;
+    border-bottom: 1px solid #288b8b;
+    background-color: #36a4a4;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.SpectateModal>.Alert>.CloseButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.SpectateModal>.Menu {
+    padding: 0 22px;
+    font-size: 0;
+    border-top: 2px solid #cdd2d2;
+    background-color: #f2f2f2;
+}
+
+.SpectateModal>.Menu>.Item {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    color: #d2d2d2;
+    text-align: left;
+    cursor: pointer;
+}
+
+.SpectateModal>.Menu>.Item>.Text {
+    font-weight: bold;
+}
+
+.SpectateModal>.Menu>.Item>.Icon {
+    display: none;
+    margin-right: 5px;
+}
+
+.SpectateModal>.Menu>.Item>.off {
+    display: inline-block;
+}
+
+.SpectateModal>.Menu>.Item.active {
+    margin-top: -2px;
+    border-top: 2px solid #36a4a4;
+}
+
+.SpectateModal>.Menu>.Item.active>.on {
+    display: inline-block;
+}
+
+.SpectateModal>.Menu>.Item.active>.off {
+    display: none;
+}
+
+.SpectateModal>.Menu>.Item.active>.Text {
+    color: #36a4a4;
+}
+
+.SpectateModal>.Content .SpectateContent {
+    margin-top: 22px;
+    padding-top: 22px;
+    text-align: left;
+    border-top: 1px solid #cdd2d2;
+}
+
+.SpectateModal>.Content .SpectateContent>.Header>.Text {
+    color: #666;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.SpectateModal>.Content .SpectateContent>.Header>.Text>.Link {
+    text-decoration: none;
+    color: #1695e6;
+}
+
+.SpectateModal>.Content .SpectateContent>.Header>.Text strong {
+    color: #36a4a4;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content {
+    margin-top: 18px;
+    padding: 0;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .DownloadButton {
+    display: inline-block;
+    background-color: #e8eaea;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #cdd2d2;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .DownloadButton>.Icon {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .DownloadButton>.Text {
+    color: #666;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .DownloadButton:hover {
+    background: #eee;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .DownloadButton:hover>.Text {
+    color: #333;
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .DownloadButton:active {
+    transform: translateY(3px);
+}
+
+.SpectateModal>.Content .SpectateContent>.Content .TextArea {
+    width: 464px;
+    border: 1px solid #cdd2d2;
+    background-color: #e8eaea;
+    padding: 15px;
+    color: #666;
+    font-size: 13px;
+    resize: none;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.SpectateModal>.Content .SpectateContent .SpectateImage {
+    height: 220px;
+    background: url('../images/spectate_message.gif');
+}
+
+.SpectateModal>.Content .SpectateContent:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.SpectateModal>.Footer {
+    border-top: 1px solid #cdd2d2;
+}
+
+.SpectateModal>.Footer p {
+    display: block;
+    padding: 13px 22px;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    background: #e8eaea;
+}
+
+.SpectateModal>.Footer p a {
+    float: right;
+    color: #555;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.SpectateModal>.Footer p a:first-child {
+    margin-right: 0;
+}
+
+.SpectateModal>.Footer p a:hover {
+    text-decoration: underline;
+}
+
+.SummonerLayoutContent {
+    font-size: 0;
+}
+
+.SummonerLayoutContent>.SideContent {
+    display: inline-block;
+    width: 300px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.SummonerLayoutContent>.SideContent>.Box {
+    margin-top: 10px;
 }
 
 .SummonerLayoutContent>.RealContent {
@@ -111,29 +951,130 @@ img {
     vertical-align: top;
 }
 
-.GameAverageStatsBox {
-    text-align: center;
-    margin-top: -1px;
-}
-
-.GameAverageStats tr>.Title:first-child {
-    border-left: none;
-    padding-left: 24px;
-}
-
-table {
-    border-collapse: collapse;
-    text-indent: initial;
-    border-spacing: 0;
-}
-
-td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
-.SummonerLayoutContent>.SideContent>.Box {
+.SummonerLayoutContent>.RealContent>.Box {
     margin-top: 10px;
+}
+
+.SummonerLayoutContent>.FullContent>.Box {
+    margin-top: 10px;
+}
+
+.SummonerLayoutContent .SpectateSummoner {
+    margin-top: 10px;
+}
+
+.SummonerAccountPromotionMessage {
+    padding-top: 10px;
+    background: #e5e9e9;
+    position: relative;
+}
+
+.SummonerAccountPromotionMessage table {
+    width: 1000px;
+    margin: 0 auto;
+    height: 90px;
+    overflow: hidden;
+    font-size: 29px;
+    text-align: center;
+}
+
+.SummonerAccountPromotionMessage .Help {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.SummonerAccountPromotionMessage .Help a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #879292;
+}
+
+.SummonerAccountPromotionMessage .Help a:hover {
+    text-decoration: underline;
+}
+
+.SummonerSeries>.Title {
+    margin-bottom: 5px;
+    color: #879292;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.SummonerSeries>.Content {
+    display: inline-block;
+    position: relative;
+    width: 69px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.SummonerSeries>.Content>.SeriesResults {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+}
+
+.SummonerSeries>.Content>.SeriesResults>.Item {
+    display: inline-block;
+}
+
+.SummonerSeries>.Content>.SeriesResults>.Item+.Item {
+    margin-left: 9px;
+}
+
+.SummonerSeries.highest>.Content {
+    width: 120px;
+}
+
+.TierBox>.Title {
+    padding: 10px 16px;
+    color: #879292;
+    font-size: 11px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.TierBox>.Title>h4 {
+    color: #555e5e;
+    font-size: 12px;
+}
+
+.TierBox>.Title>.Win {
+    color: #555e5e;
+}
+
+.lpHistoryBox {
+    position: relative;
+}
+
+.lpHistoryBox>.Navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.lpHistoryBox>.lpHistoryHighestTier {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lpHistoryHighestTier {
+    text-align: center;
+    font-size: 12px;
+    line-height: 36px;
+    color: #555e5e;
+}
+
+.lpHistoryHighestTier img {
+    height: 30px;
+    margin-top: -2px;
+    vertical-align: middle;
 }
 
 .SummonerRatingMedium {
@@ -143,6 +1084,11 @@ td {
     position: relative;
     background-color: #f2f2f2;
     padding: 8px 0;
+}
+
+.SummonerRatingMedium>.RankType {
+    font-size: 11px;
+    color: #879292;
 }
 
 .SummonerRatingMedium>.Medal {
@@ -159,49 +1105,131 @@ td {
     margin: -5px 0 -10px 0;
 }
 
-
-.sub-tier {
-    margin-top: 8px;
-    padding: 16px 0;
-    display: flex;
-    display: -ms-flexbox;
-    align-items: center;
-    background-color: #f2f2f2;
-    border: solid 1px #cdd2d2;
-}
-
-.sub-tier__medal {
-    width: 64px;
-    height: 64px;
-    margin: 0 28px;
-}
-
-.sub-tier__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: stretch;
-}
-
-.Box>.Tab>.TabList {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-
-.Box>.Tab>.TabList>.Item:first-child {
-    border-left: none;
-}
-
-.Box>.Tab>.TabList>.Item {
+.SummonerRatingMedium>.TierRankInfo {
     display: table-cell;
-    border-left: 1px solid #cdd2d2;
-    border-bottom: 1px solid #cdd2d2;
-    background-color: #f2f2f2;
     vertical-align: middle;
-    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.RankType {
+    font-size: 11px;
     color: #879292;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.Position {
+    font-size: 12px;
+    color: #353a3a;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.TempTierContainer {
+    margin: 2px 0;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.TempTierContainer>.TempTierBadge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 9.5px;
+    background-color: #879292;
+    font-family: AppleSDGothicNeo;
+    font-size: 11px;
+    color: #ffffff;
+    line-height: 13px;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.TierRank {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1f8ecd;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.TierRank.unranked {
+    color: #879292;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.TierInfo>.LeaguePoints {
+    color: #555e5e;
+    font-weight: bold;
+}
+
+.SummonerRatingMedium>.TierRankInfo>.Icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.SummonerRatingLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-top: 1px solid #cdd2d2;
+    background-color: #ebeef1;
+    color: #879292;
+}
+
+.SummonerRatingLine>.Medal {
+    width: 50px;
+    height: 50px;
+}
+
+.SummonerRatingLine>.Medal img {
+    width: 50px;
+    height: 50px;
+}
+
+.SummonerRatingLine>.TierRank {
+    flex: 1;
+    margin-left: 8px;
+    color: #555e5e;
+    font-size: 11px;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.SummonerRatingLine>.TierRank>.Position {
+    font-size: 12px;
+    font-weight: bold;
+    color: #353a3a;
+}
+
+.SummonerRatingLine>.TierRank>.TierLeaguePoint {
+    margin-top: 4px;
+    display: flex;
+}
+
+.SummonerRatingLine>.TierRank>.TierLeaguePoint>.Tier {
+    font-size: 12px;
+    font-weight: bold;
+    color: #1f8ecd;
+}
+
+.SummonerRatingLine>.TierRank>.TierLeaguePoint>.LeaguePoints {
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #879292;
+}
+
+.SummonerRatingLine>.TierRank>.TierRank {
+    color: #1f8ecd;
+    font-size: 12px;
+}
+
+.SummonerRatingLine>.TierRank>.TierRank.unranked {
+    color: #879292;
+}
+
+.SummonerRatingLine>.WinLose {
+    display: table-cell;
+    font-size: 11px;
+    line-height: 1.5;
+    vertical-align: middle;
     text-align: center;
+    font-weight: bold;
 }
 
 .ChampionBox {
@@ -220,12 +1248,33 @@ td {
     vertical-align: middle;
 }
 
+.ChampionBox>.Face>a>.ChampionImage {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
 .ChampionBox>.ChampionInfo {
     display: table-cell;
     width: 85px;
     text-align: left;
     vertical-align: middle;
     padding-left: 10px;
+}
+
+.ChampionBox>.ChampionInfo>.ChampionName {
+    width: 70px;
+    color: #555e5e;
+    font-weight: bold;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ChampionBox>.ChampionInfo>.ChampionName>a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .ChampionBox>.ChampionInfo>.ChampionMinionKill {
