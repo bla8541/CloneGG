@@ -570,8 +570,8 @@
     letter-spacing: -0.5px;
     color: #fff;
     text-align: center;
-    right: 705px;
-    bottom: 10px;
+    left: 43px;
+    top: 257px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 1px;
 }
@@ -635,4 +635,30 @@
     bottom: 1px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 1px;
+}
+
+.champion_skill_build {}
+
+
+.champion_skill_build th {
+    background: #fff;
+    border: solid 1px #ced2d5;
+    line-height: 12px;
+    font-size: 11px;
+    letter-spacing: -0.4px;
+    color: #777;
+    padding: 10px 10px 10px 10px;
+}
+
+.champion_skill_build td {
+    position: relative;
+    background: #f9f9fa;
+    border: solid 1px #ced2d5;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #4a4a4a;
+    padding: 0px 10px 10px 10px;
+
 }
