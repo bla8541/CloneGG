@@ -15,10 +15,50 @@
 <meta name="twitter:title" content="전체 게시판 - 리그오브레전드" />
     <link rel="shortcut icon" href="https://talk.op.gg/images/favicon.ico">
     <link rel="apple-touch-icon" href="https://talk.op.gg/images/favicon.png">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/multisearch.css">
 </head>
 <body>
-    <!-- Header -->
+<div class="l-wrap l-wrap--multi">
+    <header class="gnb" data-lang="ko_kr" data-region="KR" data-ismobile="false">
+        <div class="opgg-header opgg-header--gamg-fn">
+            <div class="gopp-header__gnb">
+                <h1 class="opgg-header__logo">
+                    <a class="opgg-header__logo-anchor" href="/">
+                        <img alt="Clong GG" src="http://opgg-static.akamaized.net/images/gnb/svg/00-opgglogo.svg" width="66" height="16">
+                    </a>
+                </h1>
+                <nav class="opgg-header__navi">
+                    <div class="navi-desktop">
+                        <div class="navi__item navi__item--default">
+                            <img class="icon" src="https://opgg-gnb.akamaized.net/static/images/icons/img-navi-lol-white.svg">
+                            <span>리그오브레전드</span>
+                        </div>
+                    </div>
+                </nav>
+                <div class="opgg-header__util">
+                    <div class="opgg-header__util-box">
+                        <span class="opgg-header__info" href="#">
+                            <img src="http://opgg-static.akamaized.net/images/gnb/svg/00-opgglogo.svg" alt="Clone GG" width="65" height="16">
+                        </span>
+                        <div class="opgg-header__util-item opgg-header__util-item--type-language">
+                            <div class="opgg-language">
+                                <img class="opgg-header__navi-noti-icon" src="images/icon-language.png">
+                                <button class="opgg-language__open" type="button" onclick="$.OP.GG.layout.regionLanguage.open();"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="gnb-list">
+                    <li class="gnb-list-item gnb-list-item__login">
+                        <a class="gnb-btn-login" href="#">
+                            로그인
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header Menu -->
     <div class="l-menu">
         <ul class="menu">
             <li class="menu__item">
@@ -182,5 +222,6 @@
             </ul>
         </div>
     </div>
+</div>
 </body>
 </html>
