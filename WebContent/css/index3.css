@@ -715,10 +715,7 @@
     border-collapse: collapse;
 }
 
-.champion_item_build_start {
-    display: block;
-    height: 90px;
-}
+.champion_item_build_start {}
 
 .champion_item_build_header {
     background: #fff;
@@ -780,10 +777,14 @@
     text-align: center;
     color: #4a4a4a;
     vertical-align: middle;
-    width: 110px;
+    padding: 0 15px 0 15px;
 }
 
 .build_start_item {
+    padding: 10px 0 10px 20px;
+}
+
+.build_start_item2 {
     padding: 10px 0 10px 20px;
 }
 
@@ -804,14 +805,13 @@
     height: 42px;
     box-sizing: border-box;
     position: relative;
-    top: -41px;
-    right: -60px;
+    right: -15px;
 }
 
 .item_list_pick1 {
     position: relative;
-    right: -355px;
-    top: -65px;
+    right: -76px;
+    top: -25px;
     font-size: 13px;
     font-weight: bold;
     color: #4a4a4a;
@@ -819,27 +819,25 @@
 
 .item_list_pick2 {
     position: relative;
-    right: -310px;
-    top: -45px;
+    top: -8px;
+    right: -30px;
     font-size: 13px;
     color: #777;
 }
 
-.item_list_win {
+.item_list_win span {
     position: relative;
-    right: -355px;
-    top: -55px;
+    top: -15px;
+    right: -30px;
     font-size: 13px;
     color: #777;
     font-weight: bold;
 }
 
 .champion_item_build_start2 {
-    display: block;
-    height: 20px;
-    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
     position: relative;
-    right: 426px;
+
 }
 
 .item2_list1 img {
@@ -850,8 +848,8 @@
     height: 42px;
     box-sizing: border-box;
     position: relative;
-    top: -25px;
-    right: -557px;
+    top: 0;
+    right: 0;
 }
 
 .item2_list2 img {
@@ -862,6 +860,541 @@
     height: 42px;
     box-sizing: border-box;
     position: relative;
-    top: -65px;
-    right: -616px;
+    right: -15px;
+    top: 0;
+}
+
+.item2_list_pick1 {
+    position: relative;
+    right: -80px;
+    top: -30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.item2_list_pick2 {
+    position: relative;
+    top: -10px;
+    right: -45px;
+    font-size: 13px;
+    color: #777;
+}
+
+.item2_list_win1 {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.champion_ranking_build {
+    border-top: 1px solid #e6e6e6;
+}
+
+.ranking_build_header {
+    background: #f9f9fa;
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -1.1px;
+    text-align: center;
+    color: #4a4a4a;
+    vertical-align: middle;
+
+}
+
+.ranking_build_item1 {
+    padding: 10px 0 10px 20px;
+
+}
+
+.item_list_menu1 img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list_menu2 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list_menu3 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list_menu4 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list_menu5 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_menu6_list1 {
+    position: relative;
+    right: -78px;
+    top: -30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.item_menu6_list2 {
+    position: relative;
+    top: -10px;
+    right: -40px;
+    font-size: 13px;
+    color: #777;
+}
+
+.item_menu7_list1 {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.ranking_build2_item1 {
+    padding: 10px 0 10px 20px;
+}
+
+.item_list2_menu1 img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list2_menu2 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list2_menu3 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list2_menu4 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list2_menu5 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item2_menu6_list1 {
+    position: relative;
+    right: -78px;
+    top: -30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.item2_menu6_list2 {
+    position: relative;
+    top: -10px;
+    right: -40px;
+    font-size: 13px;
+    color: #777;
+}
+
+.item2_menu7_list1 {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.ranking_build3_item1 {
+    padding: 10px 0 10px 20px;
+}
+
+.item_list3_menu1 img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list3_menu2 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list3_menu3 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list3_menu4 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list3_menu5 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item3_menu6_list1 {
+    position: relative;
+    right: -85px;
+    top: -30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.item3_menu6_list2 {
+    position: relative;
+    top: -10px;
+    right: -50px;
+    font-size: 13px;
+    color: #777;
+}
+
+.item3_menu7_list1 {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.ranking_build4_item1 {
+    padding: 10px 0 10px 20px;
+}
+
+.item_list4_menu1 img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list4_menu2 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list4_menu3 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list4_menu4 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list4_menu5 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item4_menu6_list1 {
+    position: relative;
+    right: -83px;
+    top: -30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.item4_menu6_list2 {
+    position: relative;
+    top: -10px;
+    right: -45px;
+    font-size: 13px;
+    color: #777;
+}
+
+.item4_menu7_list1 {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.ranking_build5_item1 {
+    padding: 10px 0 10px 20px;
+}
+
+.item_list5_menu1 img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list5_menu2 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list5_menu3 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item_list5_menu4 {
+    float: left;
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.item_list5_menu5 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.item5_menu6_list1 {
+    position: relative;
+    right: -88px;
+    top: -30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.item5_menu6_list2 {
+    position: relative;
+    top: -10px;
+    right: -55px;
+    font-size: 13px;
+    color: #777;
+}
+
+.item5_menu7_list1 {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+/* 추천 아이템 빌드 신발 */
+.champion_build_shoes {
+    border-top: 1px solid #e6e6e6;
+}
+
+.shoes_header {
+    background: #f9f9fa;
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -1.1px;
+    text-align: center;
+    color: #4a4a4a;
+    vertical-align: middle;
+}
+
+.shoes_menu {
+    padding: 10px 0 10px 20px;
+}
+
+.shoes_menu_list1 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.shoes_menu2_list1 {
+    position: relative;
+    right: -85px;
+    top: -20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.shoes_menu2_list2 {
+    position: relative;
+    top: -3px;
+    right: -40px;
+    font-size: 13px;
+    color: #777;
+}
+
+.shoes_menu3_list1 {
+    position: relative;
+    top: -10px;
+    right: -35px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.shoes2_menu {
+    padding: 10px 0 10px 20px;
+}
+
+.shoes2_menu_list1 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.shoes2_menu2_list1 {
+    position: relative;
+    right: -85px;
+    top: -20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.shoes2_menu2_list2 {
+    position: relative;
+    top: -3px;
+    right: -40px;
+    font-size: 13px;
+    color: #777;
+}
+
+.shoes2_menu3_list1 {
+    position: relative;
+    top: -10px;
+    right: -35px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.shoes3_menu {
+    padding: 10px 0 10px 20px;
+}
+
+.shoes3_menu_list1 img {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.shoes3_menu2_list1 {
+    position: relative;
+    right: -85px;
+    top: -20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.shoes3_menu2_list2 {
+    position: relative;
+    top: -3px;
+    right: -50px;
+    font-size: 13px;
+    color: #777;
+}
+
+.shoes3_menu3_list1 {
+    position: relative;
+    top: -10px;
+    right: -35px;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
 }
