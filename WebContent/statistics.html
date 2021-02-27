@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>챔피언 분석 - League of Legends</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/statistics_index.css" />
+    <style>
+        span.game_title img {
+            width: 28px;
+            padding-top:5px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  상단 메뉴 -->
+    <header class="top">
+        <div class="top1">
+            <div class="top1_1">
+                <a href="Clone_GG.html" class="title">CLONE.GG</a>
+                <span class="game_title"><img src="images/lol.png">리그오브레전드</span>
+                <span class="country"><i class="fas fa-globe-asia"></i></span>
+                <a href="#" class="language">한국어</a>
+                <span class="down"><i class="fas fa-angle-down"></i></span>
+                <button type="button" class="button1" style="color: white; background:#5B96F0; ">로그인</button>
+            </div>
+            <!--  상단 메뉴 2 -->
+            <div class="top1_2">
+                <a href="Clone_GG.html">#집에있자</a>
+                <a href="Clone_GG2.html">챔피언 분석</a>
+                <a href="#">통계</a>
+                <a href="#">랭킹</a>
+                <a href="#">프로관전</a>
+                <a href="#">멀티서치</a>
+                <a href="#">OP셜</a>
+                <a href="#">커뮤니티</a>
+                <div class="search">
+                    <span class="search_language">
+                        KR
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </div>
+                <form>
+                    <input type="text" name="userName" class="search2" placeholder="소환사명, 소환사명, ..." autocomplete="off">
+                    <button>
+                        <img height="14" src="https://opgg-static.akamaized.net/images/gnb/svg/00-icon-gg.svg">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="item1">
+        <div class="item1_menu1">
+            <ol class="item1_menu1_list1">
+                <li class="menu1_list1" style="border-color: #000; font-weight: bold;">
+                    <h1>
+                        <a href="#">
+                            챔피언별 게임 통계
+                        </a>
+                    </h1>
+                </li>
+                <li class="menu1_list2">
+                    <a href="#">
+                        티어별 게임 통계
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="item1_description">
+            <span class="description_txt">챔피언별 통계를 볼 수 있습니다.</span>
+        </div>
+    </div>
+    <!-- 중간 메뉴, 그래프 종류...등 -->
+    <div class="item2">
+        <div class="item2_header">
+            <div class="item2_header_box">
+                <div class="item2_header_box_content">
+                    <form>
+                        <table class="item2_content_table">
+                            <thead class="item2_content_table_title">
+                                <tr class="table_title_list">
+                                    <th class="title_list1">그래프 종류</th>
+                                    <th class="title_list1">리그</th>
+                                    <th class="title_list1">시간</th>
+                                    <th class="title_list1">맵</th>
+                                    <th class="title_list1">큐 타입</th>
+                                </tr>
+                            </thead>
+                            <tbody class="item2_content_table_item">
+                                <tr class="table_item_list">
+                                    <td class="item_list1">
+                                        <div class="item_list1_button">
+                                            <div id="rate_win" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="type" id="win" value="win" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="win" class="select_radio" style="color: #1f8ecd;">승률</label>
+                                            </div>
+                                            <div id="rate_win_ASC" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="type" id="lose" value="lose" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="lose" class="select_radio">낮은 승률</label>
+                                            </div>
+                                            <div id="rate_pick" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="type" id="picked" value="picked" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="picked" class="select_radio">게임당 픽률</label>
+                                            </div>
+                                            <div id="rate_ban" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="type" id="banned" value="banned" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="banned" class="select_radio">게임당 벤률</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="item_list1">
+                                        <div class="item_list1_button">
+                                            <div id="Tier_all" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="all" value="all" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="all" class="select_radio" style="color: #1f8ecd;">전체</label>
+                                            </div>
+                                            <div id="Tier_iron" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="iron" value="iron" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="iron" class="select_radio">Iron</label>
+                                            </div>
+                                            <div id="Tier_bronze" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="bronze" value="bronze" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="bronze" class="select_radio">Bronze</label>
+                                            </div>
+                                            <div id="Tier_sliver" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="silver" value="silver" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="silver" class="select_radio">Silver</label>
+                                            </div>
+                                            <div id="Tier_gold" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="gold" value="gold" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="gold" class="select_radio">Gold</label>
+                                            </div>
+                                            <div id="Tier_platinum" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="platinum" value="platinum" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="platinum" class="select_radio">Platinum</label>
+                                            </div>
+                                            <div id="Tier_diamond" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="diamond" value="diamond" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="diamond" class="select_radio">Diamond</label>
+                                            </div>
+                                            <div id="Tier_master" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="master" value="master" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="master" class="select_radio">Master</label>
+                                            </div>
+                                            <div id="Tier_grandmaster" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="grandmaster" value="grandmaster" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="grandmaster" class="select_radio">GrandMaster</label>
+                                            </div>
+                                            <div id="Tier_challenger" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="league" id="challenger" value="challenger" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="challenger" class="select_radio">Challenger</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="item_list1">
+                                        <div class="item_list1_button">
+                                            <div id="recent_month" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="period" id="month" value="month" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="month" class="select_radio" style="color: #1f8ecd;">최근 1달</label>
+                                            </div>
+                                            <div id="recent_week" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="period" id="week" value="week" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="week" class="select_radio">최근 7일</label>
+                                            </div>
+                                            <div id="recent_today" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="period" id="today" value="today" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="today" class="select_radio">오늘</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="item_list1">
+                                        <div class="item_list1_button">
+                                            <div id="Map1" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="mapId" id="map1" value="1" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="map1" class="select_radio" style="color: #1f8ecd;">소환사의 협곡</label>
+                                            </div>
+                                            <div id="Map2" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="mapId" id="map2" value="2" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="map2" class="select_radio">칼바람 나락</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="item_list1">
+                                        <div class="item_list1_button">
+                                            <div id="game_rank" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="queue" id="ranked" value="ranked" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="ranked" class="select_radio" style="color: #1f8ecd;">랭크게임</label>
+                                            </div>
+                                            <div id="game_normal" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="queue" id="normal" value="normal" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="normal" class="select_radio">노말</label>
+                                            </div>
+                                            <div id="game_aram" class="RadioButton">
+                                                <span class="Radiotxt">
+                                                    <input type="radio" name="queue" id="aram" value="aram" class="Radio" checked style="position: absolute;">
+                                                </span>
+                                                <label for="aram" class="select_radio">무작위 총력전</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="item3_content">
+            <div class="item3_content_box">
+                <div class="content_box">
+                    <div id="championtable">
+                        <table class="championtable_table">
+                            <thead class="championtable_header">
+                                <tr class="championtable_header_list">
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
