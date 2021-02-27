@@ -331,3 +331,232 @@
     text-overflow: ellipsis;
     /* ellipsis : 영역을 벗어나는 텍스트는 자르고 나서, 잘린부분에 생략기호(...) 를 표시; */
 }
+
+.item3_content {
+    width: 970px;
+    margin: 10px auto 0;
+    min-height: 500px;
+}
+
+.item3_content_box {
+    border: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #f2f2f2;
+    border-radius: 2px;
+}
+
+
+.header_list {
+    padding: 13px 0;
+    border-bottom: 1px solid #d5d8d8;
+    color: #555e5e;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.header_list {
+    background-image: url(../images/bg-tableSorter.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    cursor: pointer;
+    outline: none;
+}
+
+.item_list_top .list_rank {
+    background-color: #fdf2d2;
+    color: #879292;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #d5d8d8;
+    height: 42px;
+}
+
+.item_list_top .list_img {
+    background-color: #fdf2d2;
+    height: 42px;
+    font-size: 12px;
+    color: #555e5e;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.list_img a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.champion_image img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item_list_top .list_championname {
+    background-color: #fdf2d2;
+    padding-left: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 42px;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.item_list_top .list_cell {
+    background-color: #fdf2d2;
+    font-size: 12px;
+    color: #555e5e;
+    height: 42px;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.ProgressBlue {
+    display: inline-block;
+    max-width: 60%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+    background-color: #1f8ecd;
+    border-color: #1a78ae;
+}
+
+.KDA {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ProgressGreen {
+    background-color: #2daf7f;
+    border-color: #249069;
+    display: inline-block;
+    max-width: 60%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+}
+
+.ProgressOrange {
+    background-color: #f6af2e;
+    border-color: #d3962b;
+    display: inline-block;
+    max-width: 60%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+}
+
+/* top 5x */
+.item_list_ .list_rank {
+
+    color: #879292;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #d5d8d8;
+    height: 42px;
+}
+
+.item_list_ .list_img {
+
+    height: 42px;
+    font-size: 12px;
+    color: #555e5e;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.item_list_ .list_img a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item_list_ .champion_image img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item_list_ .list_championname {
+
+    padding-left: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 42px;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.item_list_ .list_cell {
+
+    font-size: 12px;
+    color: #555e5e;
+    height: 42px;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.item_list_ .ProgressBlue {
+    display: inline-block;
+    max-width: 60%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+    background-color: #1f8ecd;
+    border-color: #1a78ae;
+}
+
+.item_list_ .KDA {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.item_list_ .ProgressGreen {
+    background-color: #2daf7f;
+    border-color: #249069;
+    display: inline-block;
+    max-width: 60%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+}
+
+.item_list_ .ProgressOrange {
+    background-color: #f6af2e;
+    border-color: #d3962b;
+    display: inline-block;
+    max-width: 60%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+}
+
+
+/* 하단 메뉴 */
+
+.footer {
+
+    padding-top: 40px;
+    height: 305px;
+}
+
+.footer .footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 850px;
+    padding-left: 400px;
+    height: 60px;
+    font-size: 12px;
+}
+
+.footer_menu .special {
+    font-weight: bold;
+}
+
+.footer .footer_info {
+    width: 1550px;
+    font-size: 12px;
+    padding-left: 395px;
+    color: black;
+
+}
+
+.footer .sns_icon {
+    padding-top: 8px;
+    color: black;
+    font-size: 20px;
+    padding-left: 1430px;
+
+}

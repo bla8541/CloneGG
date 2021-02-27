@@ -13,6 +13,11 @@
             padding-top:5px;
             padding-right: 10px;
         }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
     </style>
 </head>
 
@@ -257,15 +262,719 @@
             <div class="item3_content_box">
                 <div class="content_box">
                     <div id="championtable">
-                        <table class="championtable_table">
+                        <table class="championtable_table" style="width: 100%;table-layout: fixed;">
+                            <colgroup>
+                                <col width="50">
+                                <col width="32">
+                                <col width="143">
+                                <col width="173">
+                                <col width="133">
+                                <col width="133">
+                                <col width="153">
+                                <col width="153">
+                            </colgroup>
                             <thead class="championtable_header">
                                 <tr class="championtable_header_list">
+                                    <th class="header_list" style="text-align: center;">
+                                        <div class="header_list1">#</div>
+                                    </th>
+                                    <th class="header_list" colspan="2">
+                                        <div class="header_list1">챔피언</div>
+                                    </th>
+                                    <th class="header_list">
+                                        <div class="header_list1">승률</div>
+                                    </th>
+                                    <th class="header_list">
+                                        <div class="header_list1">플레이 수</div>
+                                    </th>
+                                    <th class="header_list">
+                                        <div class="header_list1">평점</div>
+                                    </th>
+                                    <th class="header_list">
+                                        <div class="header_list1">CS</div>
+                                    </th>
+                                    <th class="header_list">
+                                        <div class="header_list1">골드</div>
+                                    </th>
                                 </tr>
                             </thead>
+                            <tbody class="championtable_item">
+                                <tr class="item_list_top">
+                                    <td class="list_rank">1</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Rammus.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">람머스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 74.342956219461%;"></div>
+                                        <span class="value" style="font-weight: bold;">54.80%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        219,676
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">2.98:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 37.170643650073%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">126.25</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 48.545484902906%;">
+                                        </div>
+                                        <span class="value">9,897</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_top">
+                                    <td class="list_rank">2</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Udyr.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">우디르</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 71.265847105077%;"></div>
+                                        <span class="value" style="font-weight: bold;">54.32%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        363,041
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.18:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_top">
+                                    <td class="list_rank">3</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Skarner.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">스카너</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_top">
+                                    <td class="list_rank">4</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Malzahar.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">말자하</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_top">
+                                    <td class="list_rank">5</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Zilean.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">질리언</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                                <tr class="item_list_">
+                                    <td class="list_rank">6</td>
+                                    <td class="list_img">
+                                        <a href="#" target="_blank">
+                                            <div class="champion_image"><img src="images/Elise.png" style="width: 32px;"></div>
+                                        </a>
+                                    </td>
+                                    <td class="list_championname">
+                                        <a href="#" target="_blank" style="color: #555e5e;">앨리스</a>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressBlue" style="width: 68.234689148227%;"></div>
+                                        <span class="value" style="font-weight: bold;">53.84%</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        36,956
+                                    </td>
+                                    <td class="list_cell">
+                                        <span class="KDA">3.33:1</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressGreen" style="width: 49.278821774184%;">
+                                        </div>
+                                        <span class="value" style="color: #2daf7f; font-weight: bold;">167.37</span>
+                                    </td>
+                                    <td class="list_cell">
+                                        <div class="ProgressOrange" style="width: 53.391455950564%;">
+                                        </div>
+                                        <span class="value">10,855</span>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_menu">
+            <a href="#">About CLONE.GG</a>
+            <a href="#">로고 히스토리</a>
+            <a href="#" class="special">개인정보처리방침</a>
+            <a href="#">도움말</a>
+            <a href="#">제휴</a>
+            <a href="#">문의/피드백</a>
+            <a href="#">채용</a>
+        </div>
+        <div class="footer_info">
+            <span class="riot_games">© 2012-2021 CLONE.GG. CLONE.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+            </span>
+        </div>
+        <div class="sns_icon">
+            <a href="https://twitter.com/globalopgg/" i class="fab fa-twitter" target="blank" class="twitter"></a>
+            <a href="https://www.instagram.com/opgginc/" i class="fab fa-instagram-square" target="blank" class="instagram"></a>
+            <a href="https://www.facebook.com/lolopgg/" i class="fab fa-facebook-square" target="blank" class="facebook"></a>
         </div>
     </div>
 </body>
